@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ctb-mining-tab_follow-social_share--01" transform="translate(-241.000000, -535.000000)" fill="#FFFFFF">
+            <g id="center" transform="translate(124.000000, 113.000000)">
+                <g id="sharing-pane" transform="translate(1.000000, 372.000000)">
+                    <g id="l" transform="translate(71.000000, 15.000000)">
+                        <g id="share-icons" transform="translate(29.000000, 23.000000)">
+                            <g id="fb">
+                                <g id="up">
+                                    <path d="M18.2932503,27.9064569 L18.2932503,20.5809666 L16,20.5809666 L16,17.9466963 L18.2932503,17.9466963 L18.2932503,16.0150738 C18.2932503,16.0150738 18.1282883,12 21.4765472,12 L24.1849877,12 L24.1849876,14.6839426 L22.4973412,14.6839426 C22.4973412,14.6839426 21.2552991,14.6140028 21.2417821,15.9442764 L21.2417819,17.9466963 L23.9721229,17.9466963 L23.5783219,20.5809666 L21.2147484,20.5809666 L21.2147484,28 L18.2932503,28 L18.2932503,27.9064569 Z" id="Icon"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

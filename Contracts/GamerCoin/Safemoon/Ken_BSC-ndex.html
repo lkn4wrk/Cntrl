@@ -1,0 +1,359 @@
+*******************************************************Ken_BSC/index.html**********************************************************************
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Home | SafeMoon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.87, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/public/css/argon.min.css" />
+    <link rel="stylesheet" type="text/css" href="/public/css/stylesheet.css?v=1616743675" />
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png" />
+    <meta property='og:image' content='https://safemoon.net/public/img/social_thumb.png' />
+    <meta property='og:image:type' content='image/png' />
+    <meta property='og:image:width' content='1280' />
+    <meta property='og:image:height' content='640' />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name='twitter:description' content='The SafeMoon Protocol is a community driven, fair launched DeFi Token.' />
+    <meta name='twitter:title' content='SafeMoon to the Moon!!!' />
+    <meta name="twitter:site" content="@safemoon">
+    <meta name='twitter:image' content='https://safemoon.net/public/img/social_thumb.png' />
+    <script type="text/javascript" src="/public/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/public/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/public/js/js.cookie-2.2.1.min.js"></script>
+    <script type="text/javascript" src="/public/js/fontawesome.pro.min.js"></script>
+    <script type="text/javascript" src="/public/js/argon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="/public/js/custom.js"></script>
+  </head>
+  <body>
+    <div class="particle-container bg-dark">
+      <div id="particles-js"></div>
+      <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+          <img src="/public/img/174x174.png" height=50 class="mr-3">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse navbar-custom-collapse collapse" id="navbar-collapse">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
+                  <a href="/">
+                  <img src="/public/img/519x141.png" height=50 class="mr-3">
+                  </a>
+                </div>
+                <div class="col-6 collapse-close">
+                  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/whitepaper">White Paper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/guide">How to Buy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/safemoonprotocol/Safemoon.sol">Safemoon Contract</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/team">Our Team</a>
+              </li>
+            </ul>
+            <a class="btn bg-gradient-info rounded-pill px-5 text-white border-0 buy-link shadow-lg-none shadow-sm" target="_blank" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3">
+            Buy Now
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex align-items-center text-center header">
+        <div class="flex-fill flex-grow-1" style="line-height:0.5em !important;">
+          <img src="/public/img/LogoAnim.gif?v=1616743675" width=150>
+          <h1 class="mb-0">SafeMoon Protocol</h1>
+          <h3 class="header-text mb-0">Safely to the Moon</h3>
+        </div>
+      </div>
+      <div class="py-4 stats-container" style="background-color:rgba(255,255,255,0.02)">
+        <div id="stats" class="w-100"></div>
+        <script>
+          updateStats();
+          
+          function updateStats() {
+              $.get("/stats", function(data) {
+                  $('#stats').html(data);
+              });
+          }
+        </script>
+      </div>
+    </div>
+    <div class="card border-0 rounded-0">
+      <div class="card-body">
+        <div class="container">
+          <div class="row text-center py-4">
+            <div class="col-sm-6 col-lg-3 py-3 py-lg-0">
+              <i class="far fa-grin-hearts fa-4x mb-3 text-primary fa-fw d-none d-lg-inline-block"></i>
+              <h1 class="mb-0 text-info">92,544</h1>
+              <p class="mb-0 text-muted">Record Holders</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 py-3 py-lg-0">
+              <i class="fad fa-coins fa-4x mb-3 text-warning fa-fw d-none d-lg-inline-block"></i>
+              <h1 class="mb-0 text-info">10,920,811.68 <small>USD</small></h1>
+              <p class="mb-0 text-muted">Liquidity Generated</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 py-3 py-lg-0">
+              <i class="fad fa-sack-dollar fa-4x mb-3 text-success d-none d-lg-inline-block"></i>
+              <h1 class="mb-0 text-info">169.2 m</h1>
+              <p class="mb-0 text-muted">Market Cap</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 py-3 py-lg-0">
+              <i class="fad fa-burn fa-4x mb-3 text-danger d-none d-lg-inline-block"></i>
+              <h1 class="mb-0 text-info">389.137 <small>T</small></h1>
+              <p class="mb-0 text-muted">Safemoon Burned</p>
+            </div>
+          </div>
+          <p class="text-muted mb-0 text-center small">
+            These stats are currently being updated manually. Last Update: March 23, 2021 02:33pm EST
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="py-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4">
+            <div class="card border-0 mb-3 mb-lg-0">
+              <div class="card-body text-center">
+                <div class="rounded-circle circle-icon text-warning">
+                  <i class="fal fa-child"></i>
+                </div>
+                <h2 class="text-info">100% Community Driven</h2>
+                <p class="text-white-50">
+                  Community driven & fair launch. Dev burned all team tokens and had to
+                  participate in presale with everyone else.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="card border-0  mb-3 mb-lg-0">
+              <div class="card-body text-center">
+                <div class="rounded-circle text-warning circle-icon">
+                  <i class="fal fa-water-lower"></i>
+                </div>
+                <h2 class="text-info">Automatic LP</h2>
+                <p class="text-white-50">
+                  Every trade contributes toward automatically generating liquidity locked inside PancakeSwap LP.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="card border-0 mb-3 mb-lg-0">
+              <div class="card-body text-center">
+                <div class="rounded-circle text-warning circle-icon">
+                  <i class="fal fa-hand-holding-usd"></i>
+                </div>
+                <h2 class="text-info">RFI Static Rewards</h2>
+                <p class="text-white-50">
+                  Holders earn passive rewards through static reflection as they watch their balance of SafeMoon grow indefinitely.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container spaceman text-shadow">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 offset-lg-6">
+          <h1 class="orbitron text-white" style="letter-spacing:2px">Road Map</h1>
+          <div class="timeline timeline-one-side" data-timeline-content="axis" data-timeline-axis-style="dashed">
+            <div class="timeline-block">
+              <span class="timeline-step badge-dark text-white p-4">
+              <i class="fas fa-shipping-fast fa-lg"></i>
+              </span>
+              <div class="timeline-content">
+                <div class="timeline-tag">
+                  Q1 2021
+                </div>
+                <h5 class="text-white mt-3 mb-0">Protocol Initialized</h5>
+                <p class="text-light text-sm mt-1 mb-0">
+                  We begin expanding our team, start marketing, building the website, obtaining donations
+                  for WhiteBit listing, and establish a Legal Entity.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-block">
+              <span class="timeline-step badge-dark text-white p-4">
+              <i class="fas fa-exchange-alt fa-lg"></i>
+              </span>
+              <div class="timeline-content">
+                <div class="timeline-tag">Q2 2021</div>
+                <h5 class="text-white mt-3 mb-0">The Initial Push</h5>
+                <p class="text-light text-sm mt-1 mb-0">
+                  We begin taking donations for Bitmart, and finish WhiteBit listing requirements.
+                  We also begin development of the SafeMoon Wallet and start pumping out merchandise.
+                  SafeMoon OG NFT conceptualization.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-block">
+              <span class="timeline-step badge-dark text-white p-4">
+              <i class="fas fa-handshake fa-lg"></i>
+              </span>
+              <div class="timeline-content">
+                <div class="timeline-tag">Q3 2021</div>
+                <h5 class="text-white mt-3 mb-0">Holding the Line</h5>
+                <p class="text-light text-sm mt-1 mb-0">
+                  We will begin listing on multiple exchanges, and gaining partnerships
+                  with various large companies to get us to the moon! T-Shirts and other apparel
+                  will launch.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-block">
+              <span class="timeline-step badge-dark text-white p-4">
+              <i class="fas fa-rocket-launch fa-lg"></i>
+              </span>
+              <div class="timeline-content">
+                <div class="timeline-tag">Q4 2021</div>
+                <h5 class="text-white mt-3 mb-0">To the Moon!</h5>
+                <p class="text-light text-sm mt-1 mb-0">
+                  We enter the NFT Marketplace and Staking. We will also
+                  be looking for more external use cases.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:100px;">
+      <div class="d-flex align-items-center flex-column flex-lg-row">
+        <div class="pr-4">
+          <a href="https://coinmarketcap.com/currencies/safemoon/" target="_blank">
+          <img src="/public/img/brands/coinmarket.png" height=50>
+          </a>
+        </div>
+        <div class="pr-4">
+          <a href="https://bscscan.com/token/0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3" target="_blank">
+          <img src="/public/img/brands/BscScan-logo.png" height=50>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer py-5 mt-5">
+      <div class="container">
+        <div class="row row-grid align-items-center">
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+              <div class="flex-fill">
+                <h1 class="text-info mb-0">SafeMoon Protocol</h1>
+                <p class="mb-3 mb-md-0 text-justify text-white-50">
+                  The SafeMoon Protocol is a community driven, fair launched DeFi Token.
+                  Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 btn-wrapper text-center text-md-right mt-sm-4 mt-lg-0">
+            <a href="https://facebook.com/safemoonprotocol" class="px-3 text-info" target="_blank">
+            <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/safemoon" class="px-3 text-info" target="_blank">
+            <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.reddit.com/r/SafeMoon/" class="px-3 text-info" target="_blank">
+            <i class="fab fa-reddit fa-2x"></i>
+            </a>
+            <a href="https://t.me/safemoonv2" class="px-3 text-info" target="_blank">
+            <i class="fab fa-telegram fa-2x"></i>
+            </a>
+            <a href="https://discord.gg/safemoon" class="px-3 text-info" target="_blank">
+            <i class="fab fa-discord fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <hr>
+        <div class="row flex-column-reverse flex-lg-row align-items-center justify-content-md-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center text-lg-left">
+              &copy; 2021
+              <a href="/" class="text-info">SafeMoon</a> | All Rights Reserved.
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+              <li class="nav-item">
+                <a href="/branding" class="nav-link">
+                Branding
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/whitepaper" class="nav-link">
+                Whitepaper
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/guide" class="nav-link">
+                How to Buy
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/terms" class="nav-link">
+                Terms of Service
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/terms" class="nav-link">
+                Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal-dark fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Live Chart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-21by9">
+              <embed src="https://goswappcharts.web.app/?isbsc=true&tokenId=0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3" width="100%" height="400px" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://goswappcharts.web.app/?isbsc=true&tokenId=0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3" class="btn btn-primary" target="_blank">View Source</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JW46FHM0X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-8JW46FHM0X');
+    </script>
+  </body>
+</html>
