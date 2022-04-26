@@ -3,40 +3,40 @@
 /**
 
 #TIT$
-   
+
    #LIQ+#RFI+#SHIB+#DOGE+#BEE = #TIT$
    #Today's_Intelligence_Tomorrows_$ecurity features:
    3% fee auto add to the liquidity pool to locked forever when selling
    2% fee auto distribute to all holders
    I created a black hole so #Bee token will deflate itself in supply with every transaction
    50% Supply is burned at start.
-   
-   
-   <!-- * - To Whom It May Intrest : This Contract And The Token It Create's Is Only 
-   Purpose Is To Be Seen And Traded, Purchesed, Sold, Gifted As A Collectable! 
-   I Nor Anyone Either Real, Imaginary, Not Of This Realm, Dimension, Planet, 
+
+
+   <!-- * - To Whom It May Intrest : This Contract And The Token It Create's Is Only
+   Purpose Is To Be Seen And Traded, Purchesed, Sold, Gifted As A Collectable!
+   I Nor Anyone Either Real, Imaginary, Not Of This Realm, Dimension, Planet,
    Hell, Heaven Or Earth!
-   Should Consider, Call, Accuse, Name, Misundersumption (Mis-Under-Sumption: 
-   When Ther Is A Misunderstanding Because Of Ignorance Assuming Or 
+   Should Consider, Call, Accuse, Name, Misundersumption (Mis-Under-Sumption:
+   When Ther Is A Misunderstanding Because Of Ignorance Assuming Or
    Even Accussing When They Have No Idea What There Talking About!)
    A Currency!
-   These Tokens Are Ment To Be Traded As Collectable's And Are The Only Accepted Token For 
-   A Future Token That I'am Creating This Contract Is Step 1 
-   In This Limited Time Event I'am Creating! 
+   These Tokens Are Ment To Be Traded As Collectable's And Are The Only Accepted Token For
+   A Future Token That I'am Creating This Contract Is Step 1
+   In This Limited Time Event I'am Creating!
    Think Of It As A Escalating Treasure Map With Puzzles And Other....?
    Which A Leagle Percentage Amount Will Be Donated To Charity For Breast's Hint's The Name!
    All Token's Or Stages Will Be Like This!
-   I Hope Everybody Like's The Idea Because This Is Only The Beggining! 
-   One Last Thing Parental Discression Advised If You Need Parent's Permission And You 
-   Leaglely Cannot Do The Thing's An Adult Can Leagaly Do Then Your Proboly Gonna 
-   Get Me Sued Then Karma Will Haunt You For A Long Amount Of Time Especialy Since I'll 
-   Propose To The Judge If I Could Work Off The Amount Being Your Perminet Babysitter, 
-   Homeschool Teacher, Coach, Music Instructor, Therapist Till Your Psyciatrist Deemed 
+   I Hope Everybody Like's The Idea Because This Is Only The Beggining!
+   One Last Thing Parental Discression Advised If You Need Parent's Permission And You
+   Leaglely Cannot Do The Thing's An Adult Can Leagaly Do Then Your Proboly Gonna
+   Get Me Sued Then Karma Will Haunt You For A Long Amount Of Time Especialy Since I'll
+   Propose To The Judge If I Could Work Off The Amount Being Your Perminet Babysitter,
+   Homeschool Teacher, Coach, Music Instructor, Therapist Till Your Psyciatrist Deemed
    You To Adulthood Oh Ya I'd Be That Too! So Just Wait Till It's Leagle!
-   Everyone Else Let's Have Fun Helping To Build 
+   Everyone Else Let's Have Fun Helping To Build
    Tomorrow's $ecurity With Today's Intelligence!
-   
-   R&R $tudio's     - * --> 
+
+   R&R $tudio's     - * -->
 
  */
 
@@ -52,7 +52,7 @@ import "https://github.com/lkn4wrk/Testy-openzeppelin-contracts/blob/master/cont
 import "https://github.com/lkn4wrk/Testy-openzeppelin-contracts/blob/master/contracts/token/ERC20/presets/ERC20PresetFixedSupply.sol";
 
 library Math {
-  
+
     function add(uint256 a, uint256 b) internal pure returns (uint256) {
         uint256 c = a + b;
         require(c >= a, "Math: addition overflow");
@@ -60,7 +60,7 @@ library Math {
         return c;
     }
 
-  
+
     function sub(uint256 a, uint256 b) internal pure returns (uint256) {
         return sub(a, b, "Math: subtraction overflow");
     }
@@ -72,9 +72,9 @@ library Math {
         return c;
     }
 
-    
+
     function mul(uint256 a, uint256 b) internal pure returns (uint256) {
-        
+
         if (a == 0) {
             return 0;
         }
@@ -119,10 +119,10 @@ abstract contract Context {
 }
 
 ///constructor
-  
-  
+
+
  pragma solidity ^0.6.12;
- 
+
 
  contract Todays_Intelligence_Tomorrows_$ecurity {
     address private _owner;
@@ -200,7 +200,7 @@ interface IUniswapV2Pair {
     function mint(address to) external returns (uint liquidity, uint amount0000000000, uint amount1111111111);
     function burn(address to) external returns (uint amount00000000, uint amount11111111, uint amount1InOutInOutInOutInOut, uint amount0InOutInOutInOutInOut);
     function swap(uint amount0OutInOutInOutInOutInOutInOutInOutInOutInOutOutOut, uint amount1OutInOutInOutInOutInOutInOutInOutInOutInOutOutOut, uint amount0InOutInOutInOutInOutInOutInOutInOutInOutInInIn, uint amount1InOutInOutInOutInOutInOutInOutInOutInOutInInIn, address to, bytes calldata data) external;
-    
+
     function skim(address to) external;
     function sync() external;
 
@@ -326,7 +326,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
         bool approveMax, uint8 v, bytes32 r, bytes32 s
     ) external returns (uint amountETH);
 
-    function swapokensForTokensSupportingFeeOnTransferTokensForETHForETHForETHForETHForETHForETHForETH(
+    function swapTokensForTokensSupportingFeeOnTransferTokensForETHForETHForETHForETHForETHForETHForETH(
         uint amountIn,
         uint amountOutMin,
         address[] calldata path,
