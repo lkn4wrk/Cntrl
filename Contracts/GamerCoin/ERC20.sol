@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.9;
 
-import "../../GSN/Context.sol";
-import "./IERC20.sol";
-import "../../math/SafeMath.sol";
-import "../../utils/Address.sol";
+import "C:\Users\rwh11\OneDrive\Documents\GitHub\MetaMaskTest\Contracts\GamerCoin\Context.sol";
+import "C:\Users\rwh11\OneDrive\Documents\GitHub\MetaMaskTest\Contracts\GamerCoin\IERC20.sol";
+import "C:\Users\rwh11\OneDrive\Documents\GitHub\MetaMaskTest\Contracts\GamerCoin\SafeMath.sol";
+import "C:\Users\rwh11\OneDrive\Documents\GitHub\MetaMaskTest\Contracts\GamerCoin\Address.sol";
 
 /**
  * @dev Implementation of the {IERC20} interface.

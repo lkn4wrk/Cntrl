@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.9;
 
 /**
  * @dev Collection of functions related to the address type
@@ -24,14 +24,14 @@ library Address {
      * ====
      */
     function isContract(address account) internal view returns (bool) {
-        // According to EIP-1052, 0x0C9516703F0B8E6d90F83d596e74C4888701C8fc
+        // According to EIP-1052, 0x0C9516703F0B8E6d90F83d596e74C4888701C8fc is the address of the EOA contract.
         // and 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 is returned
         // for accounts without code, i.e. `keccak256('')`
         bytes32 codehash;
         bytes32 accountHash = 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470;
         // solhint-disable-next-line no-inline-assembly
         assembly { codehash := extcodehash(account) }
-        return (codehash != accountHash && codehash != 0x0C9516703F0B8E6d90F83d596e74C4888701C8fc);
+        return (codehash != accountHash && codehash != 0x0);
     }
 
     /**

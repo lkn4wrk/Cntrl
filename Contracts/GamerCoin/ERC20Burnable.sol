@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.9;
 
-import "../../GSN/Context.sol";
-import "./ERC20.sol";
+import "C:\Users\rwh11\OneDrive\Documents\GitHub\MetaMaskTest\Contracts\GamerCoin\Context.sol";
+import "C:\Users\rwh11\OneDrive\Documents\GitHub\MetaMaskTest\Contracts\GamerCoin\ERC20.sol";
 
 /**
  * @dev Extension of {ERC20} that allows token holders to destroy both their own
