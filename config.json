@@ -1,0 +1,73 @@
+import {
+  ComposableController,
+  NetworkController,
+  TokenRatesController,
+} from '@metamask/controllers';
+
+const datamodel = new ComposableController([
+  new NetworkController(),
+  new TokenRatesController(),
+]);
+
+datamodel.subscribe((state) => {
+  /* data model has changed */
+});
+
+datamodel.subscribe((state) => {
+  /* some child state has changed */
+});
+
+console.log(datamodel.state); // {NetworkController: {...}, TokenRatesController: {...}}
+console.log(datamodel.flatState); // {infura: {...}, contractExchangeRates: [...]}
+
+
+const controller = new Controller(<initial_config>, <initial_state>)
+
+const controller = new Controller(<initial_config>, <initial_state>)
+
+const controller = new Controller();
+controller.configure({ foo: 'bar', baz: 'qux' });
+
+const controller = new Controller();
+controller.configure({ foo: 'bar', baz: 'qux' });
+console.log(controller.foo, controller.baz); // "bar qux"
+
+const controller = new Controller();
+controller.update({ foo: 'bar' }); // merge with existing state
+controller.update({ foo: 'bar' }, true); // overwrite existing state
+
+
+/** ******************************************
+const controller = new Controller();
+console.log(controller.state); // { ... }
+
+function onChange(state) {
+  /* state data changed */ /**
+}
+const controller = new Controller();
+controller.subscribe(onChange);
+
+******************************************
+
+function onChange(state) {
+  /* state data changed */ /**
+}
+const controller = new Controller();
+controller.subscribe(onChange);
+// ...
+controller.unsubscribe(onChange);
+
+****************************************** 
+
+import {
+  ComposableController,
+  NetworkController,
+  TokenRatesController,
+} from '@metamask/controllers';
+
+const datamodel = new ComposableController([
+  new NetworkController(),
+  new TokenRatesController(),
+]);
+
+****************************************** */
