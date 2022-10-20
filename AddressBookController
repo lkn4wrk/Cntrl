@@ -1,0 +1,1 @@
+import AddressBookController from '@metamask/controllers';
