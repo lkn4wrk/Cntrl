@@ -1,0 +1,14 @@
+import {
+  ComposableController,
+  NetworkController,
+  TokenRatesController,
+} from '@metamask/controllers';
+
+const datamodel = new ComposableController([
+  new NetworkController(),
+  new TokenRatesController(),
+]);
+
+datamodel.subscribe((state) => {
+  /* data model has changed */
+});
