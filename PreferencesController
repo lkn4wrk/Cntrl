@@ -1,0 +1,1 @@
+import PreferencesController from '@metamask/controllers';
