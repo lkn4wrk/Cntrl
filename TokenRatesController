@@ -1,0 +1,1 @@
+import TokenRatesController from '@metamask/controllers';
