@@ -1046,9 +1046,9 @@
     semver "^7.3.5"
     yargs "^17.0.1"
 
-"@metamask/contract-metadata@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@metamask/contract-metadata/-/contract-metadata-2.3.1.tgz#5a560e69c8a7fb9975e49c3f399a5b94b356a3b6"
+"@metamask/contract-metadata@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@metamask/contract-metadata/-/contract-metadata-2.4.0.tgz#ebc613981abf4a7f69784fa5ba378b68dfe946ee"
 
 "@metamask/eslint-config-jest@^9.0.0":
   version "9.0.0"
